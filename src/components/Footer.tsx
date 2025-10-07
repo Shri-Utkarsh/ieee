@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Calendar, Users, MapPin } from "lucide-react";
+import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -10,24 +11,31 @@ export function Footer() {
           <div className="space-y-5">
             <div className="flex items-center space-x-3">
               <div className="h-10 w-10 flex items-center justify-center shadow-md">
-                <img className="text-white font-bold text-sm" src="images/ieee-logo.png" alt="IEEE Logo" />
-              
+                <img
+                  className="text-white font-bold text-sm"
+                  src="images/ieee-logo.png"
+                  alt="IEEE Logo"
+                />
               </div>
               <div>
-                <h3 className="font-semibold text-lg text-white">IEEE SB SAGE</h3>
+                <h3 className="font-semibold text-lg text-white">
+                  SUI - IEEE SB
+                </h3>
                 <p className="text-sm text-gray-400">Student Branch</p>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Empowering students to innovate, collaborate, and advance technology
-              for the betterment of humanity.
+              Empowering students to innovate, collaborate, and advance
+              technology for the betterment of humanity.
             </p>
-        
           </div>
 
           {/* Quick Links */}
+
           <div>
-            <h4 className="font-semibold text-lg text-white mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg text-white mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-sm">
               {["About", "Events", "Resources"].map((link, idx) => (
                 <li key={idx}>
@@ -40,6 +48,37 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Social Links */}
+            <h4 className="font-semibold text-lg text-white mt-6 mb-4">
+              Follow Us
+            </h4>
+            <div className="flex space-x-4">
+              <a
+                href="https://www.instagram.com/sui_ieee?igsh=NWNldnZycm90cHZ4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 transition-colors text-2xl"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com/@suiieee-y6z"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-600 transition-colors text-2xl"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/sui-ieee/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition-colors text-2xl"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
 
           {/* Chapters */}
@@ -63,12 +102,20 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg text-white mb-4">Contact Info</h4>
+            <h4 className="font-semibold text-lg text-white mb-4">
+              Contact Info
+            </h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-blue-500" />
-                <span className="text-gray-400">sui.ieee@sageuniversity.in</span>
+                <a
+                  href="mailto:sui.ieee@sageuniversity.in"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  sui.ieee@sageuniversity.in
+                </a>
               </div>
+
               <div className="flex items-center space-x-3">
                 <Calendar className="h-4 w-4 text-blue-500" />
                 <span className="text-gray-400">Fridays, 4:00 PM</span>
@@ -88,8 +135,8 @@ export function Footer() {
         {/* Bottom Line */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
           <p>
-            © {new Date().getFullYear()} IEEE Student Branch, SAGE University Indore.{" "}
-            <span className="text-blue-400">All rights reserved.</span>
+            © {new Date().getFullYear()} IEEE Student Branch, SAGE University
+            Indore. <span className="text-blue-400">All rights reserved.</span>
           </p>
         </div>
       </div>

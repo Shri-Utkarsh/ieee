@@ -29,7 +29,7 @@ export function Navigation() {
         
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-lg font-semibold">IEEE SB SAGE</h1>
+              <h1 className="text-lg font-semibold">SUI - IEEE SB</h1>
               <p className="text-xs text-muted-foreground">Student Branch - STB60206025</p>
             </div>
           </Link>

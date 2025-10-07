@@ -46,7 +46,7 @@ export default function About() {
       name: "Nandini Sameliya",
       position: "Chairperson Women in Engineering",
       email: "nandinisameliya@gmail.com",
-      image: "/team-img/",
+      image: "/team-img/nandini.jpeg",
     },
     {
       name: "Utkarsh Srivastava ",
@@ -58,7 +58,7 @@ export default function About() {
       name: "Avni Chaudhary",
       position: "vice Chairperson Women in Engineering",
       email: "avni.chaudhary29@gmail.com",
-      image: "/team-img/",
+      image: "/team-img/Avani.jpeg",
     },
   ];
 
