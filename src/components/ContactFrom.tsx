@@ -114,6 +114,7 @@ export default function ContactFrom() {
               {status === 'success' && <div className="text-green-600">Message sent — thank you!</div>}
 
               <Button type="submit" className="w-full" disabled={status === 'loading'}>{status === 'loading' ? 'Sending...' : 'Send Message'}</Button>
+              
             </form>
           </CardContent>
         </Card>
